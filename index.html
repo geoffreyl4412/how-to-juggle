@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Bootstrap Template</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function() {
+            "use strict"; // Start of use strict
+
+            // jQuery for page scrolling feature - requires jQuery Easing plugin
+            // $('a.page-scroll').bind('click', function(event) {
+            //     var $anchor = $(this);
+            //     $('html, body').stop().animate({
+            //         scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            //     }, 1250, 'easeInOutExpo');
+            //     event.preventDefault();
+            // });
+
+            // Highlight the top nav as scrolling occurs
+            $('body').scrollspy({
+                target: '.navbar-fixed-top',
+                offset: 51
+            });
+
+            // Closes the Responsive Menu on Menu Item Click
+            $('.navbar-collapse ul li a').click(function() {
+                $('.navbar-toggle:visible').click();
+            });
+
+            // Offset for Main Navigation
+            $('#mainNav').affix({
+                offset: {
+                    top: 100
+                }
+            })
+        });
+    </script>
+    
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        
+        #landing {
+            display: table;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(red, yellow) no-repeat center;
+            background-size: cover;
+        }
+        
+        .navbar-custom {
+            background-color: #222222;
+            border-color: transparent;
+        }
+        
+        .navbar-custom .navbar-brand {
+            color: #fed136;
+            font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+        }
+        
+        .navbar-custom .navbar-brand:hover,
+        .navbar-custom .navbar-brand:focus,
+        .navbar-custom .navbar-brand:active,
+        .navbar-custom .navbar-brand.active {
+            color: #fec503;
+        }
+        
+        .navbar-custom .navbar-collapse {
+            border-color: rgba(255, 255, 255, 0.02);
+        }
+        
+        .navbar-custom .navbar-toggle {
+            background-color: #fed136;
+            border-color: #fed136;
+            font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            color: white;
+            font-size: 12px;
+        }
+        
+        .navbar-custom .navbar-toggle:hover,
+        .navbar-custom .navbar-toggle:focus {
+            background-color: #fed136;
+        }
+        
+        .navbar-custom .nav li a {
+            font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: white;
+        }
+        
+        .navbar-custom .nav li a:hover,
+        .navbar-custom .nav li a:focus {
+            color: #fed136;
+            outline: none;
+        }
+        
+        .navbar-custom .navbar-nav>.active>a {
+            border-radius: 0;
+            color: white;
+            background-color: #fed136;
+        }
+        
+        .navbar-custom .navbar-nav>.active>a:hover,
+        .navbar-custom .navbar-nav>.active>a:focus {
+            color: white;
+            background-color: #fec503;
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-custom {
+                background-color: transparent;
+                padding: 25px 0;
+                transition: padding 0.3s;
+                border: none;
+            }
+            .navbar-custom .navbar-brand {
+                font-size: 2em;
+                transition: all 0.3s;
+            }
+            .navbar-custom .navbar-nav>.active>a {
+                border-radius: 3px;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-custom.affix {
+                background-color: #222222;
+                padding: 10px 0;
+            }
+            .navbar-custom.affix .navbar-brand {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Landing-->
+    <header id="landing">
+        <div class="text-vertical-center">
+            
+        </div>
+    </header>
+    
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <!--<a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#started">Getting Started</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">Two Times the Fun</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Juggling Three</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#advanced">Advanced</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#extras">Extras</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <section id="home">
+        <div class="container">
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+            <h1>Hello World!</h1>
+        </div>
+    </section>
+
+    <section id="started">
+        <div class="container">
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+            <h1>Goodbye World!</h1>
+        </div>
+    </section>
+
+    <section id="two">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="three">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="advanced">
+        <div class="container">
+
+        </div>
+    </section>
+
+    <section id="extras">
+        <div class="container">
+
+        </div>
+    </section>
+
+</body>
+
+</html>
