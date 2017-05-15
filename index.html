@@ -46,6 +46,12 @@
                 }
             })
         });
+
+        $(document).ready(function() {
+            $("#hide").click(function() {
+                $("header").hide();
+            });
+        });
     </script>
 </head>
 
@@ -56,6 +62,8 @@
             <h2>Juggling</h2>
         </div>
     </header>
+    
+    <button id="hide">Hide Header</button>
 
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
