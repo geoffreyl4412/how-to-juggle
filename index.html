@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<!--All image credits go to Wikimedia Commons.-->
+    <!--All image credits go to Wikimedia Commons.-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>How to Juggle</title>
@@ -49,17 +49,24 @@
     </script>
 
     <style>
-        body {
+        body,
+        html {
             background-color: lightblue;
-            padding: 60px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .juggling, .parabola, .juggle {
+            text-align: center;
         }
         
         #landing {
             display: table;
             width: 100%;
             height: 100%;
-            background: linear-gradient(red, yellow) no-repeat center;
+            background: linear-gradient(green, lightgreen) no-repeat center;
             background-size: cover;
+            text-align: center;
         }
         
         .parabola {
@@ -152,6 +159,24 @@
                 font-size: 1.5em;
             }
         }
+        
+        @media(min-width:768px) {
+            h2 {
+                font-size: 60px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+        }
+        
+        @media(min-width:992px) {
+            h2 {
+                font-size: 80px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+        }
     </style>
 </head>
 
@@ -159,7 +184,7 @@
     <!--Landing-->
     <header id="landing">
         <div class="text-vertical-center">
-
+            <h2>Juggling</h2>
         </div>
     </header>
 
@@ -199,7 +224,7 @@
     </nav>
     <section id="home">
         <div class="container">
-            <h1>Have you ever thought of juggling before? Did you ever see someone else juggle and think "Wow, I wish I could do that too!". Well you came to the right place! In this how-to site, you can learn how to get started. After you've mastered the
+            <<h1>Have you ever thought of juggling before? Did you ever see someone else juggle and think "Wow, I wish I could do that too!". Well you came to the right place! In this how-to site, you can learn how to get started. After you've mastered the
                 basics, you can learn some advanced stuff as well and amaze your friends and family!.</h1>
             <h1>If you're still not convinced to as why you should learn to juggle, then you should listen to these health benefits. According to an Oxford study, an experiment was conducted to see if there were changes in white matter after juggling everyday
                 for six weeks. The results proved to be true as the experimental group had an increase in white matter. "'[These] changes were in regions of the brain which are involved in reaching and grasping in the periphery of vision'" says Jan Scholz,
@@ -217,14 +242,16 @@
                 <li>exercises the mind</li>
             </h1>
             <h1>So what are you waiting for? Be like this guy and start juggling!</h1>
-            <img src="img/juggling.jpg" width="40%" height="40%" align="middle">
+            <div class="juggling">
+                <img src="img/juggling.jpg" width="40%" height="40%" align="middle">
+            </div>
         </div>
     </section>
 
     <section id="started">
         <div class="container">
-            <h1>First, you need a ball or any object that can fit in your hand like a beanbag. With the object on your dominant hand, toss upwards in a motion that makes an upside down parabola in the air, and catch with the other hand (see image below). This
-                might take several tries so keep on practicing! Once you're comfortable with that, do the same with the other hand.</h1>
+            <h1>First, you need a ball or any object that can fit in your hand like a beanbag. With the object on your dominant hand, toss upwards in a motion that makes an upside down parabola in the air, and catch with the other hand (see image below).
+                This might take several tries so keep on practicing! Once you're comfortable with that, do the same with the other hand.</h1>
         </div>
         <div class="parabola">
             <img src="img/parabola.svg" width="40%" height="40%">
@@ -243,7 +270,7 @@
             <h1>Juggling three is very similar to juggling two. Of course, you'll have to hold two balls in one hand and one in the other and time your tosses. The first toss depends on where you're holding the two balls. So, using the hand with the two balls,
                 toss only <strong>one</strong> ball. When the first ball reaches it's peak, toss the ball on your other and catch the first one with the same hand. When the second ball reaches it's peak, toss the third ball (the one that hasn't been tossed
                 yet) and catch the second with the same hand. Finally, catch the third ball with the opposite hand. If all of that seemed too complicated, here's a visual to help you.</h1>
-            <div class="juggling">
+            <div class="juggle">
                 <img src="img/juggle.gif" width="40%" height="40%">
             </div>
             <h1>Congratulations, you now know how to juggle! Keep on practicing and maybe even learn some advanced tricks like juggling four balls or using rings to juggle.</h1>
