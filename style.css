@@ -34,9 +34,9 @@ h2 {
     background: url('img/balls.jpg') no-repeat center;
     background-size: cover;
     text-align: center;
-    color: black;
+    color: white;
     padding: 230px;
-    opacity: .7;
+    filter: brightness(100%);
 }
 
 header{
