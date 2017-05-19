@@ -19,6 +19,17 @@ h2 {
     padding: 60px;
 }
 
+#home{
+    background-color: orange;
+}
+
+#two{
+    background-color: green;
+}
+
+#three{
+    background-color: pink;
+}
 h1 {
     font-size: 20px;
 }
